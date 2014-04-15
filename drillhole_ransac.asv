@@ -61,8 +61,8 @@ for i=1:size(combinations)
         [dist, idx] = min(d);
         distance = distance + dist;
         
-        h(idx,:) = [];  % inc performance by reducing possible vectors
-        if(distance > best_distance) % early termination
+        h(idx,:) = [];  % inc performance by reducing possible vector
+        if(distance > best_distance)
             break;
         end
     end
